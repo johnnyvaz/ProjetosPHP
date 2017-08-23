@@ -29,7 +29,7 @@ class Luta {
                 case 0: //empate
                     echo '<p> EMPATE </p>';
                     $this->desafiado->empatarLuta();
-                    $this->d
+                    $this->desafiante->empatarLuta();
                     break;
                 case 1: //desafiado vence
                     
