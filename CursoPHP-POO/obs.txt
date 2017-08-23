@@ -1,0 +1,4 @@
+link do github
+
+ apt-get install umbrello
+https://umbrello.kde.org/
