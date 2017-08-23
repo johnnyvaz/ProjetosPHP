@@ -1,0 +1,93 @@
+Classe = Caneta
+Atributos:
++ modelo
++ cor
+- ponta
+# carga
+# tampada
+Métodos
+
+
+
+
+
+métodos modificadores
+getters
+get = pegar
+
+setters
+set = passa com parametro
+
+construtor - instancia o objeto contruindo com vários argumentos prontos
+Construct
+
+
+método construtor pode ter o mesmo nome da classe ou
+user o __construct
+
+Nome da Classe
+(atributos)
+(Métodos)
+
+
+
+interface nao tem atributos = somente métodos
+na interface só tem métodos abstratos
+não será desenvolvido na interface, 
+só vai existir um método não precisa dizer
+o que vai acontecer, não vai ter código
+
+<<interface>>
+controlador
+ligar()
+desligar()
+abrirMenu()
+fecharMenu()
+maisVolume()
+menosVolume()
+ligarMudo()
+desligarMudo()
+play()
+pause()
+
+todos métodos da interface são publicos
+
+-----
+definição de classe
+
+ControleRemoto
+-volume
+-ligado
+-tocando
+(Quando encapsula todos atributos serão privados)
++ ligar()
++ desligar()
++ abrirMenu()
++ fecharMenu()
++ maisVolume()
++ menosVolume()
++ ligarMudo()
++ desligarMudo()
++ play()
++ pause()
+- setVolume()
+- getVolume()
+- setLigado()
+- getLigado()
+- setTocando()
+- getTocando()
+
+interface Controlador
+//metodos abstratos
+publico abstrato Metodo ligar()
+publico abstrato Metodo desligar()
+publico abstrato Metodo abrirMenu()
+publico abstrato Metodo fecharMenu()
+publico abstrato Metodo maisVolume()
+publico abstrato Metodo menosVolume()
+publico abstrato Metodo ligarMudo()
+publico abstrato Metodo play()
+publico abstrato Metodo pause()
+
+---criacao de classe
+classe ControleRemoto
