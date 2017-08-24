@@ -8,7 +8,7 @@ class Luta {
     private $aprovada;
     //metodos publicos
     public function marcarLuta($l1,$l2){
-        if ($l1.getCategoria() == $l2.getCategoria()
+        if ($l1->getCategoria() == $l2->getCategoria()
                 && ($l1 != $l2)){
             $this->aprovada = true;
             $this->desafiado = $l1;
@@ -32,10 +32,14 @@ class Luta {
                     $this->desafiante->empatarLuta();
                     break;
                 case 1: //desafiado vence
-                    
+                    echo '<p>'. $this->desafiado->getNome(). 'Venceu a luta</p>';
+                    $this->desafiado->ganharLuta();
+                    $this->desafiante->perderLuta();
                     break;
                 case 2: //desafiante vence
-                    
+                    echo '<p>' . $this->desafiante->getNome(). 'Venceu a luta</p>';
+                    $this->desafiante->ganharLuta();
+                    $this->desafiado->perderLuta();
                     break;
                 
             }
