@@ -13,14 +13,16 @@ and open the template in the editor.
         <?php
         require_once 'AcoesVideo.php';
         require_once 'Video.php';
+        require_once 'Gafanhoto.php';
         
         $v[0] = new Video("Aula 1 de POO");
         $v[1] = new Video("Aula 12 de PHP");
         $v[2] = new Video("Aula 15 de HTML5");
         
-        
         print_r($v);
-        
+        $g[0] = new Gafanhoto('Jubileu', 50, 'M','jon');
+        $g[1] = new Gafanhoto('donizeti', 20, 'F','don');
+        print_r($g);
         
         
         ?>
