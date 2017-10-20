@@ -15,6 +15,10 @@ and open the template in the editor.
         require_once 'Reptil.php';
         require_once 'Peixe.php';
         require_once 'Ave.php';
+        require_once 'Canguru.php';
+        
+        $canguru = new Canguru();
+        $canguru->locomover();
         
         
         
